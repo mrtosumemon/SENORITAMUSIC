@@ -132,5 +132,8 @@ async def nxt(c, m):
     elif cb == "hb28":
         await CallbackQuery.edit_message_text(helpers.HELP_28, reply_markup=keyboard)
     elif cb == "hb29":
-        await CallbackQuery.edit_message_text(helpers.HELP_29, reply_markup=keyboard)
+        await CallbackQuery.edit_message_text(helpers.HELP_29, reply_marku
+    elif cb == "hb30":
+        await CallbackQuery.edit_message_text(helpers.HELP_30, reply_markup=keyboard)
+                
             ]
