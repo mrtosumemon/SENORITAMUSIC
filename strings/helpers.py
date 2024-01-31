@@ -335,3 +335,13 @@ HELP_29 = """
 /clear ➠ ᴛᴏ ᴄʟᴇᴀʀ ᴛʜᴇ ɴᴏᴛᴇs.
 /clearall ➠ ᴛᴏ ᴄʟᴇᴀʀ ᴀʟʟ ɴᴏᴛᴇs.
 """
+HELP_30 = """
+<b><u>Dɪᴄᴇ :</b></u>
+ Play Game With Emojis:
+/dice - Dice 🎲
+/dart - Dart 🎯
+/basket - Basket Ball 🏀
+/ball - Bowling Ball 🎳
+/football - Football ⚽
+/jackpot - Spin slot machine 🎰
+ """
