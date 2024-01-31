@@ -8,7 +8,7 @@
 
 <h4 align="center"> 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓𝐒</h4>
 
-<p align="center"><a href="https://t.me/jarvis2O"><img src="https://telegra.ph/file/83db3b7786ffa9948962b.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/jarvis2O"><img src="https://telegra.ph/file/58afe55fee5ae99d6901b.jpg" width="400"></a></p>
 
 
 > ⭐️ Thanks to everyone for using this BOTS. That is the greatest pleasure we have !
