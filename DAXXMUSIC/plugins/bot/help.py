@@ -58,6 +58,7 @@ async def helper_cb(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     cb = callback_data.split(None, 1)[1]
     keyboard = help_back_markup(_)
+   [
     if cb == "hb1":
         await CallbackQuery.edit_message_text(helpers.HELP_1, reply_markup=keyboard)
     elif cb == "hb2":
@@ -108,6 +109,22 @@ async def helper_cb(client, CallbackQuery, _):
         await CallbackQuery.edit_message_text(helpers.HELP_24, reply_markup=keyboard)
     elif cb == "hb25":
         await CallbackQuery.edit_message_text(helpers.HELP_25, reply_markup=keyboard)
+]
+         [InlineKeyboardButton ("ᴄʟᴏsᴇ",callback_data="close_reply"),InlineKeyboardButton ("ɴᴇxᴛ ➻", callback_data="nxt")],
+    ]
+    if not cb:
+        await m.reply_text(
+            f"`{text}`", reply_markup=InlineKeyboardMarkup(buttons), quote=True
+        )
+    else:
+        await m.answer()
+        await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
+
+    @app.on_callback_query(filters.regex("^nxt"))
+async def nxt(c, m):
+    if m.data == "nxt":
+        buttons = [
+            [
     elif cb == "hb26":
         await CallbackQuery.edit_message_text(helpers.HELP_26, reply_markup=keyboard)
     elif cb == "hb27":
@@ -116,3 +133,4 @@ async def helper_cb(client, CallbackQuery, _):
         await CallbackQuery.edit_message_text(helpers.HELP_28, reply_markup=keyboard)
     elif cb == "hb29":
         await CallbackQuery.edit_message_text(helpers.HELP_29, reply_markup=keyboard)
+            ]
