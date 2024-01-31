@@ -4,7 +4,7 @@ from DAXXMUSIC import app
 from config import BOT_USERNAME
 
 start_txt = """**
-✪ ωεℓ¢σмє ƒσя 𝑱𝑨𝑹𝑽𝑰𝑺 яєρσѕ ✪
+✪ ωεℓ¢σмє ƒσя jคяv¡ร яєρσѕ ✪
  
  ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
  
@@ -38,14 +38,14 @@ async def start(_, msg):
 ],
 [
               InlineKeyboardButton("𝐀𝐋𝐋 𝐁𝐎𝐓𝐒", url=f"https://t.me/CDX_WORLD"),
-              InlineKeyboardButton("︎𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/doraemon890/jarvisXmusic"),
+              InlineKeyboardButton("︎𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/doraemon890/ANNIE-X-MUSIC"),
               ],
               [
               InlineKeyboardButton("𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧︎", url=f"https://github.com/PRADHAN474/managerbot"),
 InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/PRADHAN474/Oxychatbot"),
 ],
 [
-InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/doraemon890/jarvisXsession-for-both-pyro"),
+InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/doraemon890/jarvis-x-session"),
 InlineKeyboardButton("𝐁𝐖𝐀𝐍𝐃𝐀𝐑𝐋𝐎𝐊", url=f"https://t.me/BWANDARLOK"),
 ],
 [
@@ -61,7 +61,7 @@ InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://github.com/PR
 InlineKeyboardButton("𝐂𝐎𝐃𝐄𝐗", url=f"https://t.me/TEAM_CDX"),
 ],
 [
-InlineKeyboardButton("𝗔𝗟 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧", url=f"https://github.com/doraemon890/Jarvis-X-spam"),
+InlineKeyboardButton("𝗔𝗟 𝗦𝗣𝗔𝗠 𝗕𝗢𝗧", url=f"https://github.com/doraemon890/JARVIS-X-SPAM"),
 
         ]]
     
