@@ -11,7 +11,7 @@
 <p align="center"><a href="https://t.me/jarvis2O"><img src="https://telegra.ph/file/58afe55fee5ae99d6901b.jpg" width="400"></a></p>
 
 
-> ⭐️ Thanks to everyone for using this BOTS. That is the greatest pleasure we have !
+> ⭐️ Thanks to everyone for using this bot. That is the greatest pleasure we have !
 
 
 # ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
@@ -21,7 +21,7 @@
 <summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
 <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/doraemon890/jarvisXmusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/doraemon890/ANNIE-X-MUSIC)
 
 </details>
 
