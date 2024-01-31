@@ -85,7 +85,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/03ba6095a3e3b0554a156.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/51600957eaaf96ad308c7.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://telegra.ph/file/5f15712a84154fefd0e5b.jpg"
@@ -98,7 +98,7 @@ STREAM_IMG_URL = "https://telegra.ph/file/f85e89871eb80c91f8a87.jpg"
 SOUNCLOUD_IMG_URL = "https://telegra.ph/file/7d9389f7a76acfd00d76a.jpg"
 YOUTUBE_IMG_URL = "https://telegra.ph/file/82c73d890c797ed59953b.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/3c9c23857075dcaea5892.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/51600957eaaf96ad308c7.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/f19707fd244cb09e8b5e8.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/d1e6dd4ce208a651f0106.jpg"
 
 
