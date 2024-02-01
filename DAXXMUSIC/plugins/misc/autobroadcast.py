@@ -2,7 +2,7 @@ import asyncio
 import datetime
 from DAXXMUSIC import app
 from pyrogram import Client
-from config import START_IMG_URL
+from config import TELEGRAM_AUDIO_URL
 from DAXXMUSIC.utils.database import get_served_chats
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
