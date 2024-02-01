@@ -121,13 +121,3 @@ if SUPPORT_CHAT:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
-
-
-
-     ____.  _____ ______________   ____.___  _________
-    |    | /  _  \\______   \   \ /   /|   |/   _____/
-    |    |/  /_\  \|       _/\   Y   / |   |\_____  \ 
-/\__|    /    |    \    |   \ \     /  |   |/        \
-\________\____|__  /____|_  /  \___/   |___/_______  /
-                 \/       \/                       \/ 
-
