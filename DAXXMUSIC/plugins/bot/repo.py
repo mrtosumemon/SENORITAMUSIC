@@ -45,7 +45,7 @@ async def start(_, msg):
 InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/PRADHAN474/Oxychatbot"),
 ],
 [
-InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/doraemon890/jarvis-x-session"),
+InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/doraemon890/JARVIS-X-SESSION"),
 InlineKeyboardButton("𝐁𝐖𝐀𝐍𝐃𝐀𝐑𝐋𝐎𝐊", url=f"https://t.me/BWANDARLOK"),
 ],
 [
