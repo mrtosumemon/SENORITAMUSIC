@@ -4,7 +4,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <h1 align="center"><b>[⚡] 𝙏𝙝𝙚 𝐉𝐚𝐫𝐯𝐢𝐬 𝘽𝙤𝙩𝙨 [⚡]</b></h1>
-<h4 align ="center"><img src="https://readme-typing-svg.herokuapp.com?color=F6780&width=620&lines=✨+🦋𝐀𝐍𝐍𝐈𝐄+𝐌𝐔𝐒𝐈𝐂+𝐁𝐎𝐓+🖤+🥀"></b></h4>
+<h4 align ="center"><img src="https://readme-typing-svg.herokuapp.com?color=F67280&width=620&lines=✨+🦋𝐀𝐍𝐍𝐈𝐄+𝐌𝐔𝐒𝐈𝐂+𝐁𝐎𝐓+🖤+🥀"></b></h4>
 
 <p align="center"><a href="https://t.me/jarvis2O"><img src="https://telegra.ph/file/58afe55fee5ae99d6901b.jpg" width="400"></a></p>
 
