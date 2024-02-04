@@ -14,7 +14,7 @@ from DAXXMUSIC.core.userbot import *
 from DAXXMUSIC import app
 
 
-BOT_LIST = ["NexikoBot", "GitWizardBot", "urXdestinyBot"]
+BOT_LIST = ["NexikoBot", "Annie_X_music_bot", "jarvis_string_gen_bot"]
 
 
 
@@ -22,7 +22,7 @@ BOT_LIST = ["NexikoBot", "GitWizardBot", "urXdestinyBot"]
 
 @app.on_message(filters.command("botschk") & SUDOERS)
 async def bots_chk(app, message):
-    msg = await message.reply_photo(photo="https://telegra.ph/file/48578068b7574bb25a529.jpg", caption="**ᴄʜᴇᴄᴋɪɴɢ ʙᴏᴛs sᴛᴀᴛs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ...**")
+    msg = await message.reply_photo(photo="https://telegra.ph/file/eed7d65051d66fa0302e2.jpg", caption="**ᴄʜᴇᴄᴋɪɴɢ ʙᴏᴛs sᴛᴀᴛs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ...**")
     response = "**ʙᴏᴛs sᴛᴀᴛᴜs ᴅᴇᴀᴅ ᴏʀ ᴀʟɪᴠᴇ ᴄʜᴇᴄᴋᴇʀ**\n\n"
     for bot_username in BOT_LIST:
         try:
