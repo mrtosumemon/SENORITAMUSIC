@@ -137,7 +137,6 @@ async def greet_group(_, member: ChatMemberUpdated):
 Nᴀᴍᴇ ✧ {user.mention}
 Iᴅ ✧ {user.id}
 Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
-𝐂ᴏᴍᴘʟᴇᴛᴇᴅ ✧ {count} 𝐌ᴇᴍʙᴇʀ𝐬
 ➖➖➖➖➖➖➖➖➖➖➖➖**
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/YumikooBot?startgroup=true")]])
@@ -162,6 +161,5 @@ async def bot_wel(_, message):
 NAME: {message.chat.title}
 ID: {message.chat.id}
 USERNAME: @{message.chat.username}
-𝐂ᴏᴍᴘʟᴇᴛᴇᴅ ✧ {count} 𝐌ᴇᴍʙᴇʀ𝐬
 ➖➖➖➖➖➖➖➖➖➖➖➖**
 """)
