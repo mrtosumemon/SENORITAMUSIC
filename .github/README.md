@@ -8,7 +8,7 @@
 
 > 🦋💗𝐓𝐇𝐈𝐒 𝐈𝐒 𝐓𝐇𝐄 𝐌𝐎𝐒𝐓 𝐀𝐃𝐕𝐀𝐍𝐂𝐄 𝐌𝐔𝐒𝐈𝐂 + 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓 𝐁𝐎𝐓 🔥🥀
 
-## String Session
+## 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍🥀
 
 <p align="center"><a href="https://t.me/jarvis_string_gen_bot"> <img src="https://img.shields.io/badge/String%20Session-black?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
 
