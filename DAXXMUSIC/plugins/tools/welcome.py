@@ -36,9 +36,7 @@ class temp:
     U_NAME = None
     B_NAME = None
 
-# ... (rest of your code remains unchanged)
 
-# ... (FUCK you randi ke bacvhhe )
 
 def circle(pfp, size=(500, 500)):
     pfp = pfp.resize(size, Image.ANTIALIAS).convert("RGBA")
