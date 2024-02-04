@@ -1,8 +1,8 @@
 aiofiles
 bard
 SpeechRecognition
-pornhub-api==0.3.0
-aiohttp==3.9.3
+pornhub-api==0.2.0
+aiohttp==3.9.1
 asyncio==3.4.3
 beautifulsoup4
 daxxhub
@@ -18,7 +18,7 @@ pycountry
 heroku3
 apscheduler
 motor==3.3.2
-pillow==10.2.0
+pillow==9.5.0
 psutil
 wget
 pyfiglet
@@ -44,10 +44,10 @@ youtube-search
 youtube-search-python
 gtts
 git+https://github.com/AsmSafone/SafoneAPI
-lexica-api==1.5.4
+lexica-api==1.5.1
 httpx==0.25.2
 gpytranslate
-openai==1.10.0
+openai==0.28.0
 pickledb
 python-telegram-bot==20.7
 img2pdf
