@@ -103,6 +103,7 @@ async def auto_state(_, message):
 @app.on_chat_member_updated(filters.group, group=-3)
 async def greet_group(_, member: ChatMemberUpdated):
     chat_id = member.chat.id
+    count = await app.get_chat_members_count(chat.id)
     A = await wlcm.find_one(chat_id)  # Corrected this line
     if not A:
         return
@@ -137,6 +138,7 @@ async def greet_group(_, member: ChatMemberUpdated):
 Nᴀᴍᴇ ✧ {user.mention}
 Iᴅ ✧ {user.id}
 Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
+𝐂ᴏᴍᴘʟᴇᴛᴇᴅ ✧ {count} 𝐌ᴇᴍʙᴇʀ𝐬
 ➖➖➖➖➖➖➖➖➖➖➖➖**
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/YumikooBot?startgroup=true")]])
@@ -161,5 +163,6 @@ async def bot_wel(_, message):
 NAME: {message.chat.title}
 ID: {message.chat.id}
 USERNAME: @{message.chat.username}
+𝐂ᴏᴍᴘʟᴇᴛᴇᴅ ✧ {count} 𝐌ᴇᴍʙᴇʀ𝐬
 ➖➖➖➖➖➖➖➖➖➖➖➖**
 """)
