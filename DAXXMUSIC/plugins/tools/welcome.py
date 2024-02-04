@@ -103,11 +103,11 @@ async def handle_member_update(client: app, member: ChatMemberUpdated):
 
             # Welcome message for new members
             caption = (
-            f"**Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}**\n"
+            f"**Wᴇʟᴄᴏᴍᴇ Tᴏ ✧{member.chat.title}**\n"
             f"**Nᴀᴍᴇ ✧{member.new_chat_member.user.mention}\n"
-            f"**🔐ʟɪɴᴋ » @{chat.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
-            f"**๏ ᴍᴇᴍʙᴇʀ ɪᴅ »** `{member.new_chat_member.user.id}`\n"
-            f"**๏ ᴜsᴇʀɴᴀᴍᴇ » @{member.new_chat_member.user.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
+            f"**🔐ʟɪɴᴋ ✧ @{chat.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
+            f"**๏ ᴍᴇᴍʙᴇʀ ɪᴅ ✧** `{member.new_chat_member.user.id}`\n"
+            f"**๏ ᴜsᴇʀɴᴀᴍᴇ ✧ @{member.new_chat_member.user.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
             f"**👥ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀ ɴᴏᴡ » {count}**"
             )
             button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
