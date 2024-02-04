@@ -8,7 +8,7 @@ from DAXXMUSIC import app
 
 @app.on_message(filters.command("tg"))
 async def search_command(_, message):
-    msg = await message.reply("Searching...")
+    msg = await message.reply("🦋")
     async with aiohttp.ClientSession() as session:
         start = 1
         async with session.get(
