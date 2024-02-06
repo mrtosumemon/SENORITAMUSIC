@@ -74,7 +74,7 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "DAXXMUSIC/assets/wel.png"
+bg_path = "DAXXMUSIC/assets/wel2.png"
 font_path = "DAXXMUSIC/assets/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
