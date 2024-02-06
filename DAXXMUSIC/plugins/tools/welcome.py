@@ -40,44 +40,30 @@ resize_text = (
 
 # --------------------------------------------------------------------------------- #
 
-async def get_userinfo_img(
-    bg_path: str,
-    font_path: str,
-    user_id: Union[int, str],
-    profile_path: Optional[str] = None
-):
-    bg = Image.open(bg_path)
+def circle(pfp, size=(500, 500)):
+    pfp = pfp.resize(size, Image.ANTIALIAS).convert("RGBA")
+    bigsize = (pfp.size[0] * 3, pfp.size[1] * 3)
+    mask = Image.new("L", bigsize, 0)
+    draw = ImageDraw.Draw(mask)
+    draw.ellipse((0, 0) + bigsize, fill=255)
+    mask = mask.resize(pfp.size, Image.ANTIALIAS)
+    mask = ImageChops.darker(mask, pfp.split()[-1])
+    pfp.putalpha(mask)
+    return pfp
 
-    if profile_path:
-        img = Image.open(profile_path)
-        mask = Image.new("L", img.size, 0)
-        draw = ImageDraw.Draw(mask)
-        draw.pieslice([(0, 0), img.size], 0, 360, fill=255)
-
-        circular_img = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        circular_img.paste(img, (0, 0), mask)
-        resized = circular_img.resize((400, 400))
-        bg.paste(resized, (440, 160), resized)
-
-    img_draw = ImageDraw.Draw(bg)
-
-    img_draw.text(
-        (529, 627),
-        text=str(user_id).upper(),
-        font=get_font(46, font_path),
-        fill=(255, 255, 255),
-    )
-
-    path = f"./userinfo_img_{user_id}.png"
-    bg.save(path)
-    return path
-
-# --------------------------------------------------------------------------------- #
-
-bg_path = "DAXXMUSIC/assets/userinfo.png"
-font_path = "DAXXMUSIC/assets/hiroko.ttf"
-
-# --------------------------------------------------------------------------------- #
+def welcomepic(pic, user, chatname, id, uname):
+    background = Image.open("DAXXMUSIC/assets/wel2.png")
+    pfp = Image.open(pic).convert("RGBA")
+    pfp = circle(pfp)
+    pfp = pfp.resize((825, 824))
+    draw = ImageDraw.Draw(background)
+    font = ImageFont.truetype('DAXXMUSIC/assets/font.ttf', size=110)
+    welcome_font = ImageFont.truetype('DAXXMUSIC/assets/font.ttf', size=60)
+    draw.text((2100, 1420), f'ID: {id}', fill=(12000, 12000, 12000), font=font)
+    pfp_position = (1990, 435)
+    background.paste(pfp, pfp_position, pfp)
+    background.save(f"downloads/welcome#{id}.png")
+    return f"downloads/welcome#{id}.png"
 
 # Function to handle new members
 async def handle_member_update(client: app, member: ChatMemberUpdated):
