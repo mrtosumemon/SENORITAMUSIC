@@ -23,11 +23,11 @@ from DAXXMUSIC.utils.daxx_ban import admin_filter
 
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://telegra.ph/file/3a35b86005e7b3c2d9310.jpg",
+    "https://telegra.ph/file/2e7b72279b28105607667.jpg",
+    "https://telegra.ph/file/87bae0c629ae73032ae77.jpg",
+    "https://telegra.ph/file/f85e89871eb80c91f8a87.jpg",
+    "https://telegra.ph/file/70c87e971a919a48e3e2b.jpg",
 ]
 # --------------------------------------------------------------------------------- #
 
@@ -103,12 +103,12 @@ async def handle_member_update(client: app, member: ChatMemberUpdated):
 
             # Welcome message for new members
             caption = (
-            f"**🌷𝐇ᴇʏ {member.new_chat_member.user.mention}**\n\n**🏘𝐖ᴇʟᴄᴏᴍᴇ 𝐈ɴ 𝐍ᴇᴡ 𝐆ʀᴏᴜᴘ🥳**\n\n"
+            f"**🌷Hᴇʏ ✧ {member.new_chat_member.user.mention}**\n\n**🏘Wᴇʟᴄᴏᴍᴇ Tᴏ🥳**\n\n"
             f"**📝** {chat.title}\n"
-            f"**🔐ʟɪɴᴋ » @{chat.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
-            f"**๏ ᴍᴇᴍʙᴇʀ ɪᴅ »** `{member.new_chat_member.user.id}`\n"
-            f"**๏ ᴜsᴇʀɴᴀᴍᴇ » @{member.new_chat_member.user.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
-            f"**👥ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀ ɴᴏᴡ » {count}**"
+            f"**🔐Lɪɴᴋ ✧ @{chat.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
+            f"**๏ Mᴇᴍʙᴇʀ Iᴅ ✧** `{member.new_chat_member.user.id}`\n"
+            f"**๏ Usᴇʀɴᴀᴍᴇ ✧ @{member.new_chat_member.user.username}**\n➖➖➖➖➖➖➖➖➖➖➖\n"
+            f"**👥Tᴏᴛᴀʟ Mᴇᴍʙᴇʀ Nᴏᴡ ✧ {count}**"
             )
             button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
             add_button_text = "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏"
