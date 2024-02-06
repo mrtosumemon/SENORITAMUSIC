@@ -19,7 +19,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from DAXXMUSIC.utils.vip_ban import admin_filter
+from DAXXMUSIC.utils.daxx_ban import admin_filter
 
 
 random_photo = [
