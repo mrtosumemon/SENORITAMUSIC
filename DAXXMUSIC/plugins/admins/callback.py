@@ -37,7 +37,20 @@ from strings import get_string
 checker = {}
 upvoters = {}
 
+@app.on_callback_query(filters.regex("unban_assistant"))
+async def unban_assistant(_, callback: CallbackQuery):
+    chat_id = callback.message.chat.id
+    userbot = await get_assistant(chat_id)
+    
+    try:
+        await app.unban_chat_member(chat_id, userbot.id)
+        await callback.answer("𝗠𝘆 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗜𝗱 𝗨𝗻𝗯𝗮𝗻𝗻𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆🥳\n\n➻ 𝗡𝗼𝘄 𝗬𝗼𝘂 𝗖𝗮𝗻 𝗣𝗹𝗮𝘆 𝗦𝗼𝗻𝗴𝘀🔉\n\n𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂💝", show_alert=True)
+    except Exception as e:
+        await callback.answer(f"𝙁𝙖𝙞𝙡𝙚𝙙 𝙏𝙤 𝙐𝙣𝙗𝙖𝙣 𝙈𝙮 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙄 𝘿𝙤𝙣'𝙩 𝙃𝙖𝙫𝙚 𝘽𝙖𝙣 𝙋𝙤𝙬𝙚𝙧\n\n➻ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙋𝙧𝙤𝙫𝙞𝙙𝙚 𝙈𝙚 𝘽𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 𝙎𝙤 𝙏𝙝𝙖𝙩 𝙄 𝙘𝙖𝙣 𝙐𝙣𝙗𝙖𝙣 𝙈𝙮 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙄𝙙", show_alert=True)
 
+
+checker = {}
+upvoters = {}
 @app.on_callback_query(filters.regex("ADMIN") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist(client, CallbackQuery, _):
@@ -130,32 +143,87 @@ async def del_back_playlist(client, CallbackQuery, _):
                         return await CallbackQuery.answer(
                             _["admin_14"], show_alert=True
                         )
-    if command == "Pause":
+                if command == "Pause":
         if not await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_1"], show_alert=True)
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await DAXX.pause_stream(chat_id)
+        await VIP.pause_stream(chat_id)
+        buttons = [
+        [
+            InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"),
+        ],
+        ]
         await CallbackQuery.message.reply_text(
-            _["admin_2"].format(mention), reply_markup=close_markup(_)
+            _["admin_2"].format(mention), reply_markup=InlineKeyboardMarkup(buttons)
         )
     elif command == "Resume":
         if await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await DAXX.resume_stream(chat_id)
+        await VIP.resume_stream(chat_id)
+        buttons_resume = [
+        [
+            
+            InlineKeyboardButton(
+                text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="ᴘᴀᴜsᴇ",
+                callback_data=f"ADMIN Pause|{chat_id}",
+            ),
+        ]
+    ]
+    
         await CallbackQuery.message.reply_text(
-            _["admin_4"].format(mention), reply_markup=close_markup(_)
+            _["admin_4"].format(mention), reply_markup=InlineKeyboardMarkup(buttons_resume)
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await DAXX.stop_stream(chat_id)
+        await VIP.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_5"].format(mention), reply_markup=close_markup(_)
         )
         await CallbackQuery.message.delete()
+   
+               elif command == "Loop":
+        await CallbackQuery.answer()
+        await set_loop(chat_id, 3)
+        await CallbackQuery.message.reply_text(
+            _["admin_41"].format(mention, 3)
+        )
+    elif command == "Shuffle":
+        check = db.get(chat_id)
+        if not check:
+            return await CallbackQuery.answer(
+                _["admin_42"], show_alert=True
+            )
+        try:
+            popped = check.pop(0)
+        except:
+            return await CallbackQuery.answer(
+                _["admin_43"], show_alert=True
+            )
+        check = db.get(chat_id)
+        if not check:
+            check.insert(0, popped)
+            return await CallbackQuery.answer(
+                _["admin_43"], show_alert=True
+            )
+        await CallbackQuery.answer()
+        random.shuffle(check)
+        check.insert(0, popped)
+        await CallbackQuery.message.reply_text(
+            _["admin_44"].format(mention)
+        )
     elif command == "Skip" or command == "Replay":
         check = db.get(chat_id)
         if command == "Skip":
