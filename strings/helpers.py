@@ -193,7 +193,7 @@ HELP_17 = """
 HELP_18 = """
 <b><u>Tᴀɢ-Aʟʟ :</b></u>
 
- /utga or /uall ➠ ғᴏʀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢ....🫠
+ /utag or /uall ➠ ғᴏʀ ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢ....🫠
  /stoputag or /offuall ➠ ᴛᴏ sᴛᴏᴘ ᴜɴʟɪᴍɪᴛᴇᴅ ᴛᴀɢ
  /mention or /all ➠ ᴇɴᴛᴇʀ ᴛʜᴇ ᴛᴇxᴛ ᴀғᴛᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ.
  /cancel or /alloff  ➠ ᴛᴏ ᴄᴀɴᴄᴇʟ ᴍᴇɴᴛɪᴏɴ.
