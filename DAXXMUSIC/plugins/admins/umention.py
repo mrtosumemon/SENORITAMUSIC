@@ -40,7 +40,7 @@ async def tag_all_users(_, message):
                     await app.send_message(message.chat.id, f'{text}\n{usertxt}\n\n|| ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stoputag ||')
                     usernum = 0
                     usertxt = ""
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(2)
         except Exception as e:
             print(e)
 
