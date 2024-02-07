@@ -50,5 +50,5 @@ async def stop_tagging(_, message):
     try:
         del SPAM_CHATS[message.chat.id]
         await message.reply_text("**Tagging process stopped successfully!**")
-    except KeyError:
+    else:
         await message.reply_text("**No active tagging process found!**")
